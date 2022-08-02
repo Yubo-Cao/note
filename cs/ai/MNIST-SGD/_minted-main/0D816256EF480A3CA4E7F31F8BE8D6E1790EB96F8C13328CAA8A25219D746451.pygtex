@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{def} \PYG{n+nf}{accuracy}\PYG{p}{(}\PYG{n}{pred}\PYG{p}{,} \PYG{n}{yb}\PYG{p}{)}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{    Metric that drives our understanding.}
+
+\PYG{l+s+sd}{    Not suitable for AI, since a small weight change won\PYGZsq{}t change accuracy at all.}
+\PYG{l+s+sd}{    Hence, it is useless as a loss function \PYGZhy{}\PYGZhy{} it only yields two gradients: infinite or 0.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{return} \PYG{p}{(}\PYG{p}{(}\PYG{n}{pred} \PYG{o}{\PYGZgt{}} \PYG{l+m+mf}{0.0}\PYG{p}{)}\PYG{o}{.}\PYG{n}{float}\PYG{p}{(}\PYG{p}{)} \PYG{o}{==} \PYG{n}{yb}\PYG{p}{)}\PYG{o}{.}\PYG{n}{float}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{item}\PYG{p}{(}\PYG{p}{)}
+
+
+\PYG{k}{def} \PYG{n+nf}{mnist\PYGZus{}loss}\PYG{p}{(}\PYG{n}{prds}\PYG{p}{,} \PYG{n}{trgts}\PYG{p}{)}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{    Loss function that is used to drive AI.}
+
+\PYG{l+s+sd}{    Sensitive to small changes.}
+\PYG{l+s+sd}{    Loss function needs to be smooth and consistent/small derivative everywhere.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{c+c1}{\PYGZsh{} Activiation function. Ensure prds between [0, 1]. lambda sigmoid: 1/(1 + torch.exp(\PYGZhy{}x))}
+    \PYG{n}{prds} \PYG{o}{=} \PYG{n}{prds}\PYG{o}{.}\PYG{n}{sigmoid}\PYG{p}{(}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} Equiv: [b[i] if e else c[i] for i, e in enumerate(a)]}
+    \PYG{k}{return} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{trgts} \PYG{o}{==} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{prds}\PYG{p}{,} \PYG{n}{prds}\PYG{p}{)}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{(}\PYG{p}{)}
+\end{Verbatim}

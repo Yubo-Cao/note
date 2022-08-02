@@ -1,0 +1,3 @@
+/home/yubo/data/note/cs/clox/cmake-build-debug/CMakeFiles/clox.dir
+/home/yubo/data/note/cs/clox/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yubo/data/note/cs/clox/cmake-build-debug/CMakeFiles/rebuild_cache.dir

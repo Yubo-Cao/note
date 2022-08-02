@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{target} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{randint}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{p}{(}\PYG{l+m+mi}{6}\PYG{p}{,}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{idx} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{arange}\PYG{p}{(}\PYG{l+m+mi}{6}\PYG{p}{)}
+\PYG{n}{sm\PYGZus{}acts} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{softmax}\PYG{p}{(}\PYG{n}{acts}\PYG{p}{,} \PYG{n}{dim} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{sm\PYGZus{}act}\PYG{p}{[}\PYG{n}{idx}\PYG{p}{,} \PYG{n}{target}\PYG{p}{]} \PYG{c+c1}{\PYGZsh{} 得到是 target 的可能性。对于 n 个不同的 category, 得到的都是这个模型预计的是结果为 target 的概率。}
+\end{Verbatim}

@@ -1,0 +1,763 @@
+\documentclass[12pt]{ctexart}
+
+% necessary packages
+\usepackage{tikz}
+
+% set the font
+\setmainfont{Fira Code}
+\setCJKmainfont{Noto Serif CJK SC}
+
+% increase baseline skip
+\usepackage{setspace}
+\setstretch{1.5}
+
+% define height of lowercase letters
+\newcommand{\lowercaseheight}{1ex}
+% define height of uppercase letters
+\newcommand{\uppercaseheight}{2ex}
+% define depth of descenders
+\newcommand{\descenderdepth}{-0.5ex}
+    % you may add more values here and then use them in the {tikzpicture}
+    % to add more line to your grid
+
+
+% package to have a "every line" hook
+\usepackage{lineno}
+
+\newenvironment{drillsheet}{%
+    % let the "line numbers" start directly at the text
+    \setlength\linenumbersep{0pt}%
+    % let the "line numbers" be the grid
+    \renewcommand{\thelinenumber}{%
+        \begin{tikzpicture}[overlay]
+                % baseline
+                \draw ((0,0) -- ++(\textwidth,0);
+                % lowercase height
+                \draw [ultra thin] ((0,\lowercaseheight) -- ++(\textwidth,0);
+                % uppercase height
+                \draw (0,\uppercaseheight) -- ++(\textwidth,0);
+                % descender depth
+                \draw [ultra thin] (0,\descenderdepth) -- ++(\textwidth,0);
+        \end{tikzpicture}%
+    }%
+    % the font and color of the numbers must be set explicitly
+    \renewcommand\linenumberfont{\normalfont\color{black}}
+    % start "line numbering", i.e. the grid
+    \begin{linenumbers}%
+        % set text color to gray
+        \color{black!25}%
+}{
+    % end "numbering", i.e. the grid
+    \end{linenumbers}%
+}
+
+\newcommand\sep{\hspace{1cm plus 1cm minus 1cm}}
+
+\begin{document}
+\Large
+\begin{drillsheet}
+    ardent\sep 热情的，热切的
+
+    ascetic\sep 修道的，苦行的
+
+    aseptic\sep 无菌的，防腐的
+
+    asinine\sep 愚蠢的
+
+    assiduous\sep 勤奋的
+
+    assuage\sep 减轻，使满足
+
+    asylum\sep 避难所，庇护
+
+    attenuate\sep 使变细，削弱
+
+    averse\sep 不愿意的，反对的
+
+    aversion\sep 厌恶
+
+    avert\sep 预防，转移
+
+    aviary\sep 大型鸟舍
+
+    babble\sep 含糊不清地说，胡言乱语
+
+    bacchanalian\sep 喝醉的
+
+    badger\sep 骚扰，纠缠
+
+    badinage\sep 开玩笑，打趣
+
+    bait\sep 骚扰，戏弄
+
+    baleful\sep 恶毒的，不祥的
+
+    balk\sep 阻挠，阻止，突然拒绝前行
+
+    banal\sep 陈腐的，平庸的
+
+    bask\sep 晒太阳，取暖
+
+    bate\sep 减弱，抑制
+
+    bauble\sep 小玩意
+
+    bedizen\sep 把......打扮得过分俗气
+
+    bedraggle\sep 把....弄得湿透，在泥泞中拖过
+
+    begrudge\sep 怨恨，嫉妒
+
+    beguile\sep 诱骗，欺骗，愉快地消磨时间
+
+    belabor\sep 喋喋不休，责骂
+
+    belie\sep 与....矛盾，掩饰
+
+    bellicose\sep 好斗的
+
+    belligerent\sep 好战的
+
+    bemoan\sep 哀叹，为...惋惜
+
+    benefactor\sep 赠送者，赞助人
+
+    beneficiary\sep 受益人
+
+    benign\sep 和蔼的，仁慈的
+
+    berate\sep 痛斥，严责
+
+    bereavement\sep 丧失
+
+    bereft\sep 被剥夺的，丧失的
+
+    besmirch\sep 玷污，弄脏
+
+    bestow\sep 给予
+
+    betoken\sep 预示
+
+    betroth\sep 订婚
+
+    bicker\sep 斗嘴
+
+    bilious\sep 脾气暴躁的
+
+    bilk\sep 诈骗
+
+    bland\sep 温和的，惬意的
+
+    blatant\sep 显眼的，明目张胆的
+
+    bleak\sep 寒冷的，暗淡的
+
+    blighted\sep 毁灭的
+
+    bludgeon\sep 短棒
+
+    blunder\sep 错误
+
+    bode\sep 预示
+
+    bogus\sep 虚假的
+
+    bohemian\sep 反世俗陈规的
+
+    boisterous\sep 狂暴的，吵闹的
+
+    bombastic\sep 夸大的
+
+    boon\sep 恩赐
+
+    boorish\sep 粗鲁的，不敏感的
+
+    brandish\sep 挥舞，炫耀
+
+    brazen\sep 傲慢无礼的，无耻的
+
+    brevity\sep 简洁
+
+    brittle\sep 易碎的，难相处的
+
+    broach\sep 提出，开启
+
+    brooch\sep 胸针
+
+    brunt\sep 冲击，主攻
+
+    brusque\sep 生硬的，唐突的
+
+    buffoonery\sep 滑稽
+
+    bumptious\sep 自夸的
+
+    bungle\sep 搞糟，笨手笨脚地做
+
+    burgeon\sep 迅速生长，抽芽
+
+    bustle\sep 奔忙，充满
+
+    cacophonous\sep 不悦耳的，不和谐的
+
+    calamity\sep 灾难
+
+    callous\sep 坚硬，冷漠的
+
+    calumny\sep 诽谤
+
+    canter\sep 慢跑
+
+    canto\sep 长诗中的篇章
+
+    capricious\sep 变化无常的
+
+    cardiologist\sep 心脏病学专家
+
+    castigate\sep 严厉惩罚
+
+    cateclysm\sep 大灾难
+
+    categorical\sep 绝对的，完全的
+
+    caulk\sep 填塞
+
+    caustic\sep 腐蚀的，刻薄的
+
+    cavalier\sep 傲慢的，怠慢的
+
+    cede\sep 屈服，割让
+
+    censor\sep 检查员
+
+    censorious\sep 挑剔的，吹毛求疵的
+
+    censure\sep 责备，批评
+
+    chaffing\sep 玩笑的，嘲弄的
+
+    charisma\sep 感召力，超凡魅力
+
+    chary\sep 谨慎的
+
+    chasten\sep 惩戒，通过责罚使改正
+
+    chicanery\sep 欺骗
+
+    chimerical\sep 空想的，异想天开的
+
+    chivalrous\sep 勇武的
+
+    choleric\sep 脾气暴躁的
+
+    chortle\sep 咯咯笑
+
+    churlish\sep 粗野的
+
+    circumscribe\sep 限制
+
+    circumspect\sep 慎重的，周到的
+
+    clairvoyant\sep 有洞察力的，有洞察力的人
+
+    clamor\sep 喧闹
+
+    clandestine\sep 秘密的
+
+    claustrophobia\sep 幽闭恐怖症
+
+    cleave\sep 劈开，黏着，忠于
+
+    clemency\sep 温和，仁慈
+
+    cliche\sep 陈词滥调
+
+    clique\sep 私党，派系
+
+    clout\sep 影响
+
+    cloying\sep （因过量而）倒胃口的，使人腻烦的
+
+    coalition\sep 联盟
+
+    coddle\sep 溺爱
+
+    cogent\sep 使人信服的
+
+    cogitate\sep 思考
+
+    cognate\sep 同词源的，同类的
+
+    cognitive\sep 认知的
+
+    cognizance\sep 认识
+
+    collate\sep 核对，整理
+
+    lucid\sep 浅显易懂的，明晰的
+
+    ludicrous\sep 可笑的，滑稽的，愚蠢的
+
+    lugubrious\sep 可怜的，悲惨的
+
+    lummox\sep 愚蠢不中用者
+
+    lurid\sep 可怕的，可憎的
+
+    lurk\sep 潜藏，潜伏，埋伏
+
+    luscious\sep 美味的，甘美的
+
+    machinations\sep 诡计
+
+    madrigal\sep 牧歌，小曲
+
+    maim\sep 使残废
+
+    malfeasance\sep 不法行为，渎职
+
+    malign\sep 污蔑，中伤
+
+    malingerer\sep 装病以逃避责任者，装病的人
+
+    malleable\sep 延展性的，可锻的
+
+    maniacal\sep 发狂的，狂乱的
+
+    marred\sep 损坏的
+
+    marshal\sep 排练，安排
+
+    masochist\sep 受虐狂
+
+    matriculate\sep 被录取入学
+
+    maudlin\sep 感情脆弱的
+
+    maul\sep 粗手粗脚地摆弄
+
+    meager\sep 瘦的，贫乏的，不足的
+
+    meddlesome\sep 好干涉的
+
+    meditation\sep 沉思，冥想
+
+    menagerie\sep （一群）野生动物
+
+    mendacious\sep 不诚实的，爱扯谎的
+
+    mercenary\sep 唯利是图的
+
+    mercurial\sep 活泼善变的
+
+    mesmerize\sep 施催眠术
+
+    mettle\sep 勇气，奋斗精神
+
+    milieu\sep 环境，表达方式
+
+    mincing\sep 装模作样的
+
+    mire\sep 陷入泥潭
+
+    mirth\sep 欢乐，欢笑
+
+    miscellany\sep 杂集
+
+    misdemeanor\sep 【律】轻罪
+
+    mitigate\sep 减轻，使缓和
+
+    modicum\sep 少量，一点点
+
+    mollify\sep 使平息，安抚
+
+    moratorium\sep 【法】债务人延期偿还（权）
+
+    morbid\sep 病的，病理的，（心理）病态的
+
+    morose\sep 脾气差的，孤僻的
+
+    mote\sep 微粒，屑
+
+    muddle\sep 混合，搞乱
+
+    muggy\sep 闷热的，潮湿的
+
+    mundane\sep 世界的，世俗的，平凡的
+
+    munificent\sep 慷慨的
+
+    muse\sep 沉思，默想
+
+    muster\sep 召集，集合
+
+    narcissist\sep 自我陶醉者
+
+    nascent\sep 初生的，新生的，萌芽的
+
+    nauseate\sep 使厌恶，使恶心
+
+    nefarious\sep 邪恶的，穷凶极恶的
+
+    noisome\sep 有恶臭的，使人不快的
+
+    nondescript\sep 难以区别的，无特征的
+
+    nonplus\sep 使迷惑
+
+    nullify\sep 使无效，废弃
+
+    obdurate\sep 执拗的，顽固的
+
+    obfuscate\sep 捣乱，迷惑，使慌乱
+
+    obligatory\sep 必须的
+
+    oblique\sep 间接的，倾斜的
+
+    oblivious\sep 不在意的，忘却的
+
+    obnoxious\sep 使人讨厌的，可憎的
+
+    obsequious\sep 奉承的，卑躬的
+
+    obsolete\sep 废弃的，淘汰的
+
+    obstetrician\sep 产科医生
+
+    obstreperous\sep 喧哗的，喧闹的
+
+    obtuse\sep 迟钝的，愚笨的
+
+    ogle\sep 色眯眯地看，盯视
+
+    onerous\sep 繁重的，艰巨的
+
+    onus\sep 责任，义务
+
+    opaque\sep 不透明的
+
+    opiate\sep 麻醉剂，镇静剂
+
+    opulence\sep 富裕，丰富
+
+    opus\sep 作品，杰作
+
+    ordeal\sep 苦难经历，折磨
+
+    ostentatious\sep 炫耀的，卖弄的，显眼的
+
+    outwit\sep 智胜，骗取
+
+    ovation\sep 热烈欢呼，鼓掌
+
+    overbearing\sep 专横的，傲慢的，压倒一切的
+
+    overt\sep 公开的，明显的
+
+    pacify\sep 安抚，使安静
+
+    paean\sep 赞歌，欢乐歌
+
+    pall\sep 令人发腻
+
+    palliate\sep 减轻，缓和，为....找借口
+
+    paltry\sep 太少的，微不足道的
+
+    panacea\sep 万全之策，万灵药
+
+    panache\sep 神气十足，潇洒
+
+    pandemic\sep 广泛蔓延的，普遍的，全世界的
+
+    panegyric\sep 颂文，颂辞
+
+    parable\sep 说教性寓言
+
+    paranoia\sep 多疑，偏执狂
+
+    paraphernalia\sep 装备，个人随身物品
+
+    parched\sep 干枯的，焦干的
+
+    pariah\sep 被遗弃的人
+
+    parity\sep 相同，同等
+
+    parochial\sep 地方观念的，教区的
+
+    parsimony\sep 小气，吝啬
+
+    partisan\sep 党派的，派性的
+
+    pastiche\sep 模仿作品，集锦，拼凑而成的作品
+
+    pastoral\sep 田园的，乡村的，牧人的
+
+    patent\sep 公开的，明显的
+
+    pathological\sep 病理学的，疾病的，病态的
+
+    pathos\sep 伤感，伤感力
+
+    patricianr\sep 贵族的，贵族式的
+
+    patronize\sep 赞助，资助，光顾
+
+    paucity\sep 不足，缺乏
+
+    peccadillo\sep 小过错，小过失
+
+    pedestrian\sep 平淡无奇的，乏味的
+
+    pediatrician\sep 儿科医生
+
+    penchant\sep 嗜好，爱好
+
+    penitent\sep 忏悔的，悔过的
+
+    peregrination\sep 旅行
+
+    peremptory\sep 专横的，不容抗拒的
+
+    perfidious\sep 不忠实的，背信弃义的
+
+    perfunctory\sep 肤浅的，敷衍的
+
+    pemicious\sep 有害的，恶性的
+
+    perpetrate\sep 做错事，犯错
+
+    perpetual\sep 连续不断的，无休止的
+
+    perpetuate\sep 使长存，使永恒
+
+    persevere\sep 坚持不懈
+
+    pert\sep 唐突的，无礼的
+
+    pertinacious\sep 固执，坚持的
+
+    pertinent\sep 接相关的，有关的
+
+    pervasive\sep 的，恶的
+
+    petulant\sep 脾气坏的
+
+    phlegmatic\sep 沉着的，冷静的
+
+    picaresque\sep 流浪汉题材的
+
+    pine\sep 衰弱，憔悴，思念
+
+    piquant\sep 辛辣的，开胃的
+
+    pique\sep 不悦，生气
+
+    placate\sep 使平静，安抚
+
+    placebo\sep 安慰剂
+
+    plaintive\sep 哀伤的
+
+    platitude\sep 老生常谈，陈词滥调
+
+    pliable\sep 柔韧的，变通的，适应性强的
+
+    pliant\sep 柔顺的，温顺的
+
+    podiatrist\sep 足医
+
+    poignancy\sep 心酸，惨痛，（感情）强烈，深刻
+
+    politic\sep 深谋远虑的，慎重的，明智的
+
+    pomposity\sep 自大，傲慢
+
+    pontifical\sep 教皇的，教宗的，傲慢武断的
+
+    porous\sep 有孔的，疏松的
+
+    portend\sep 预兆，预示
+
+    portent\sep 标志
+
+    poseur\sep 装模作样的人，装腔作势的人
+
+    postulate\sep 假定，基本原理
+
+    potent\sep 有力的，有效的
+
+    potion\sep 一服，一剂
+
+    precipice\sep 悬崖，危险的位置
+
+    precipitous\sep 陡峭的，急躁的
+
+    preclude\sep 避免，排除
+
+    precocious\sep 早熟的
+
+    predicament\sep 困境，窘境
+
+    preen\sep 把（自己）打扮漂亮，自满
+
+    premeditate\sep 预谋，预先考虑
+
+    premise\sep 预述，假定
+
+    premonition\sep 预感，前兆
+
+    preposterous\sep 荒谬的，乖戾的
+
+    prerogative\sep 特权，天赋的特权
+
+    presumptuous\sep 放肆的，专横的，傲慢的
+
+    pretext\sep 借口，托辞
+
+    prevalent\sep 普遍的，流行的
+
+    prevaricate\sep 支吾，搪塞
+
+    prim\sep 整洁的，一本正经的，丝毫不苟的
+
+    primp\sep 打扮，装饰
+
+    privation\sep 匮乏，穷困
+
+    procrastinate\sep 迟延，耽搁
+
+    prodigious\sep 巨大的，庞大的
+
+    prodigy\sep 奇迹，神童
+
+    profane\sep 亵渎，玷污
+
+    profligate\sep 放荡的，不检点的，肆意挥霍的
+
+    profusion\sep 极丰富，挥霍
+
+    proletarian\sep 无产者，工人
+
+    proliferation\sep 增长，扩展
+
+    prolong\sep 延长，拖延
+
+    promiscuous\sep 杂乱的，淫乱的
+
+    promulgate\sep 发布，公布
+
+    prone\sep 有...倾向的，易于....的
+
+    propagate\sep 繁殖，宣传
+
+    propinquity\sep 相近，邻近
+
+    propitiate\sep 劝解
+
+    propulsive\sep 推进的
+
+    prosaic\sep 乏味的，事实的
+
+    proselytize\sep 使改宗
+
+    prostrate\sep 伏倒，全身俯卧
+
+    protean\sep 变化多端的
+
+    protract\sep 延长
+
+    provisional\sep 临时的
+
+    prude\sep 过分拘谨的人
+
+    prudent\sep 谨慎的
+
+    prune\sep 修剪，删改
+
+    pulverize\sep 研磨成粉
+
+    punctilious\sep 拘泥细节的，谨小慎微的
+
+    puny\sep 小的，弱的
+
+    purge\sep 净化，清除
+
+    purported\sep 传说的，谣传的
+
+    pusillanimous\sep 懦弱的，优柔寡断的
+
+    putrid\sep 腐烂的
+
+    quack\sep 庸医，骗子
+
+    quail\sep 畏惧，沮丧
+
+    quaint\sep 离奇有趣的
+
+    qualms\sep 不安，良心责备
+
+    quandary\sep 窘境，进退两难
+
+    quell\sep 镇压，平息，使安静
+
+    quench\sep 熄灭，抑制（欲望），满足
+
+    quibble\sep 吹毛求疵的异议
+
+    quiescent\sep 休止的，休眠的，暂时停止活动的
+
+    quintessence\sep 精华，典范
+
+    quip\sep 讽刺，嘲讽
+
+    quirk\sep 急转，未被预料的事件
+
+    quixotic\sep 唐吉诃德式的，狂想家的
+
+    quizzical\sep 戏弄的，揶揄的
+
+    quorum\sep 法定人数
+
+    rail\sep 责骂，怒斥
+
+    ramble\sep 漫游
+
+    rancid\sep 像油脂腐臭味的，腐臭的
+
+    rankle\sep 激怒，使怨恨
+
+    rapacious\sep 贪婪的，掠夺成性的
+
+    rapport\sep 彼此友爱的关系，和谐
+
+    rapt\sep 被深深吸引的，着迷的
+
+    ratiocination\sep 推理，推论
+
+    raucous\sep 沙哑（声）的，嘈杂的
+
+    rave\sep 过分赞扬，吹捧
+
+    ravel\sep 使混乱，松开，卷入混乱
+
+    ravenous\sep 饿极的
+
+    raze\sep 夷平，拆毁
+
+    recalcitrant\sep 顽抗的，桀骜不驯的
+
+    recapitulate\sep 概括，总结
+
+    recidivism\sep 累犯，重犯
+
+    reconnaissance\sep 侦察，勘察，搜索
+
+    recumbent\sep 靠着的，斜躺着的
+
+    recuperate\sep 复原，恢复
+\end{drillsheet}
+\end{document}

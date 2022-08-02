@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{p}{(}\PYG{n}{path} \PYG{o}{/} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{images}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{ls}\PYG{p}{(}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{}(\PYGZsh{}7393) [Path(\PYGZsq{}/root/.fastai/data/oxford\PYGZhy{}iiit\PYGZhy{}pet/images/Siamese\PYGZus{}87.jpg\PYGZsq{}),}
+\end{Verbatim}

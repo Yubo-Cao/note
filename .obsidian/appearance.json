@@ -1,0 +1,9 @@
+{
+  "theme": "moonstone",
+  "cssTheme": "Atom",
+  "baseFontSize": 18,
+  "interfaceFontFamily": "Noto Sans",
+  "monospaceFontFamily": "Fira Code",
+  "textFontFamily": "Noto Sans",
+  "translucency": false
+}

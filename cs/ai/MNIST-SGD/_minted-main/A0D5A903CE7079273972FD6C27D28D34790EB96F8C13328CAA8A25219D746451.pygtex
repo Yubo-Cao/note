@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{dls} \PYG{o}{=} \PYG{n}{DataLoaders}\PYG{p}{(}\PYG{n}{train\PYGZus{}dl}\PYG{p}{,} \PYG{n}{valid\PYGZus{}dl}\PYG{p}{)}
+\PYG{n}{learn} \PYG{o}{=} \PYG{n}{Learner}\PYG{p}{(}
+    \PYG{n}{dls}\PYG{p}{,}
+    \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{28} \PYG{o}{*} \PYG{l+m+mi}{28}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{,}
+    \PYG{n}{opt\PYGZus{}func}\PYG{o}{=}\PYG{n}{SGD}\PYG{p}{,}
+    \PYG{n}{loss\PYGZus{}func}\PYG{o}{=}\PYG{n}{mnist\PYGZus{}loss}\PYG{p}{,}
+    \PYG{n}{metrics}\PYG{o}{=}\PYG{n}{accuracy}\PYG{p}{,}
+\PYG{p}{)}
+\PYG{n}{learn}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{lr}\PYG{o}{=}\PYG{n}{lr}\PYG{p}{)}
+\end{Verbatim}

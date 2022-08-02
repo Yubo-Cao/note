@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{x}\PYG{p}{,} \PYG{n}{y} \PYG{o}{=} \PYG{n}{dls}\PYG{o}{.}\PYG{n}{one\PYGZus{}batch}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{preds}\PYG{p}{,} \PYG{n}{trgts} \PYG{o}{=} \PYG{n}{learn}\PYG{o}{.}\PYG{n}{get\PYGZus{}preds}\PYG{p}{(}\PYG{n}{dl}\PYG{o}{=}\PYG{p}{[}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{)}\PYG{p}{]}\PYG{p}{)}
+\PYG{n}{preds}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{,} \PYG{n}{trgts}\PYG{o}{.}\PYG{n}{shape}
+\PYG{c+c1}{\PYGZsh{} (torch.Size([64, 37]), torch.Size([64]))}
+\end{Verbatim}

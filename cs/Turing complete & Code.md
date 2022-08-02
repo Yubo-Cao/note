@@ -1,0 +1,56 @@
+# NLP leetcode
+
+- Turing machine
+  - Tape **Input data**
+    - Beginning symbol
+    - Some symbols
+    - End symbol
+    - Symbols constitutes the alphabet
+  - Head **Index of the string, which symbol is processing(read and writes)**. It goes to left | right
+  - State $z$ **Output data**, when the turning machine halts, it yields something
+  - Terminal state $\rho$
+- Algorithm
+  - Transition function
+    - Function accepts two variable, read the head and states.
+    - Output three variable, new states, write something, and direction of moving
+- Church-Turing thesis
+  - Any real-world computation can be translated into an equivalent computation involving a Turing machine.
+
+- NLP
+  - **Statistically Meaningful Approximation: a Case Study on Approximating Turing Machines with Transformers**
+    - WCM algorithm of conversion.
+      - `https://github.com/jonrbates/turing`
+      - `Description` objects and `Simulator` objects
+    - Convert the Turing machine into a neural network
+    - An algorithm to convert the transition function, tape, etc. into parameters of a network
+  - **Transformer** network is also Turing complete.
+- Transformer/Encoder/Decoder network
+  - Proposed in "Attention is all you need" in 2017
+  - Core component of AI
+    - Encoder encode the input
+      - Vectorization of data
+        - Convert alphabets of vectors
+          - One hot encoding. An mapping objects that stores the value of vector and its corresponding symbol
+          - Binary encoding. 
+    - Decoder create the output
+      - Decoder executes every steps of Turning machine
+      - Each pass through the decoder network yields the next step of Turning machine
+        - All the initial inputs of turning machine is passed to decoder
+- WCM network
+  - Use feedforward layers to apply transition function $\delta$ go get next state, symbol to write, and movement direction
+    - It will list all the possible input combinations, and if any inputs match, an output is yielded
+  - Use feedforward layers to compute new head position
+  - Determine symbol at need head position **(most difficult)**
+    - Use decoder **cross-attention** to determine initial symbol at this position
+      - Attention
+        - $\text{Attm}(Q,K,V)=\text{softmax}(QK^T)$
+        - It gives the similarity scores and pass the results to a normalization function.
+        - Q, K, V have a linear transformation
+        - Softmax has a scaling factor 
+      - Use cross attention to determine initial symbol at certain position
+        - 
+    - Use decoder self-attention to determine the symbol at that position
+    - Fallback to empty if neither works.
+
+- Turing completeness is a desirable property for an AII system.
+  - The work is bout writing out the transition function.

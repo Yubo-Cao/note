@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k+kn}{from} \PYG{n+nn}{operator} \PYG{k+kn}{import} \PYG{n}{attrgetter}
+\PYG{c+c1}{\PYGZsh{} 使用 attrgetter 而非 lambda 避免序列化问题}
+\PYG{n}{dblock} \PYG{o}{=} \PYG{n}{DataBlock}\PYG{p}{(}\PYG{n}{get\PYGZus{}x} \PYG{o}{=} \PYG{n}{attrgetter}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{fname}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{,} \PYG{n}{get\PYGZus{}y} \PYG{o}{=} \PYG{n}{attrgetter}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{labels}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{dsets} \PYG{o}{=} \PYG{n}{dblock}\PYG{o}{.}\PYG{n}{datasets}\PYG{p}{(}\PYG{n}{df}\PYG{p}{)}
+\PYG{n}{dsets}\PYG{o}{.}\PYG{n}{train}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}
+\PYG{c+c1}{\PYGZsh{} (\PYGZsq{}005209.jpg\PYGZsq{}, \PYGZsq{}car\PYGZsq{})}
+\end{Verbatim}

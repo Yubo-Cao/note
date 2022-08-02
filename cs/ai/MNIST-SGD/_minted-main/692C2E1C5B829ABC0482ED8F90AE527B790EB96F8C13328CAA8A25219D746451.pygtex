@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{def} \PYG{n+nf}{init\PYGZus{}params}\PYG{p}{(}\PYG{n}{shape}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{randn}\PYG{p}{(}\PYG{n}{shape}\PYG{p}{)}\PYG{o}{.}\PYG{n}{requires\PYGZus{}grad\PYGZus{}}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{params} \PYG{o}{=} \PYG{n}{init\PYGZus{}params}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{)}
+\end{Verbatim}

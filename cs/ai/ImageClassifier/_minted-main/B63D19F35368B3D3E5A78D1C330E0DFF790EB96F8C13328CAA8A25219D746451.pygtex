@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{learn}\PYG{o}{.}\PYG{n}{recorder}\PYG{o}{.}\PYG{n}{plot\PYGZus{}loss}\PYG{p}{(}\PYG{p}{)}
+\end{Verbatim}

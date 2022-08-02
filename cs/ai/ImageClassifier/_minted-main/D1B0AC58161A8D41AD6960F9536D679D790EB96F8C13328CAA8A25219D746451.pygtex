@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{learn} \PYG{o}{=} \PYG{n}{cnn\PYGZus{}learner}\PYG{p}{(}\PYG{n}{dls}\PYG{p}{,} \PYG{n}{resnet34}\PYG{p}{,} \PYG{n}{metrics}\PYG{o}{=}\PYG{n}{accuracy}\PYG{p}{)}
+\PYG{n}{lr\PYGZus{}min}\PYG{p}{,} \PYG{n}{lr\PYGZus{}steep} \PYG{o}{=} \PYG{n}{learn}\PYG{o}{.}\PYG{n}{lr\PYGZus{}find}\PYG{p}{(}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} min / 10: 8.32e\PYGZhy{}03, steepest: 6.31e\PYGZhy{}03}
+\PYG{c+c1}{\PYGZsh{} 从图像可知，比较合适的 learning rate 为 3e\PYGZhy{}3}
+\end{Verbatim}

@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{def} \PYG{n+nf}{get\PYGZus{}x}\PYG{p}{(}\PYG{n}{row}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{path} \PYG{o}{/} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{train}\PYG{l+s+s1}{\PYGZsq{}} \PYG{o}{/} \PYG{n}{row}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{fname}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+\PYG{k}{def} \PYG{n+nf}{get\PYGZus{}y}\PYG{p}{(}\PYG{n}{row}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{row}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{labels}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{split}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ }\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{dblock} \PYG{o}{=} \PYG{n}{DataBlock}\PYG{p}{(}\PYG{n}{blocks} \PYG{o}{=} \PYG{p}{(}\PYG{n}{ImageBlock}\PYG{p}{,} \PYG{n}{MultiCategoryBlock}\PYG{p}{)}\PYG{p}{,}
+                  \PYG{n}{get\PYGZus{}x} \PYG{o}{=} \PYG{n}{get\PYGZus{}x}\PYG{p}{,}
+                  \PYG{n}{get\PYGZus{}y} \PYG{o}{=}  \PYG{n}{get\PYGZus{}y}\PYG{p}{)}
+\PYG{n}{dsets} \PYG{o}{=} \PYG{n}{dblock}\PYG{o}{.}\PYG{n}{datasets}\PYG{p}{(}\PYG{n}{df}\PYG{p}{)}
+\PYG{n}{dsets}\PYG{o}{.}\PYG{n}{train}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} (PILImage mode=RGB size=500x375,}
+\PYG{c+c1}{\PYGZsh{} TensorMultiCategory([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0.,}
+\PYG{c+c1}{\PYGZsh{}        0., 0.]))}
+\end{Verbatim}

@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k+kn}{from} \PYG{n+nn}{fastai}\PYG{n+nn}{.}\PYG{n+nn}{vision}\PYG{n+nn}{.}\PYG{n+nn}{all} \PYG{k+kn}{import} \PYG{o}{*}
+\PYG{n}{path} \PYG{o}{=} \PYG{n}{untar\PYGZus{}data}\PYG{p}{(}\PYG{n}{URLs}\PYG{o}{.}\PYG{n}{PASCAL\PYGZus{}2007}\PYG{p}{)}
+\PYG{n}{df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{n}{path} \PYG{o}{/} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{train.csv}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{df}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
+\end{Verbatim}

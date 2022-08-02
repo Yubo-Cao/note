@@ -1,0 +1,134 @@
+{
+  "main": {
+    "id": "19cd4169c70b7bc7",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc493a2646915626",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "science fair/task.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f2c899e70c9e3d89",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1b66981a3b1dc60",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0a412c3edaadd78c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d6d7cfeb0f134541",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fa709ff268115a9b",
+    "type": "split",
+    "children": [
+      {
+        "id": "83f851284c2d2332",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08cb9c184e39d5e9",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "7aa621bd182ede25",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "science fair/task.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d141422f4cdee0a7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "science fair/task.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "248209c5bdba5f9c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "dc493a2646915626",
+  "lastOpenFiles": [
+    "science fair/task.md",
+    "history/India and China.md",
+    "history/Civilization.md",
+    "cs/spider/Parse Webpage.md",
+    "cs/spider/Basic Spider.md",
+    "cs/spider/Fetch Webpage.md",
+    "cs/linux/Basic Commands.md",
+    "cs/sql/Business Decision Making.md",
+    "cs/Extract Data Lineage.md",
+    "cs/sql/安装.md"
+  ]
+}

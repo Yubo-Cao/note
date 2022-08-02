@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{def} \PYG{n+nf}{init\PYGZus{}weights}\PYG{p}{(}\PYG{n}{size}\PYG{p}{,} \PYG{n}{std} \PYG{o}{=} \PYG{l+m+mf}{1.0}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{p}{(}\PYG{n}{torch}\PYG{o}{.}\PYG{n}{randn}\PYG{p}{(}\PYG{n}{size}\PYG{p}{)} \PYG{o}{*} \PYG{n}{std}\PYG{p}{)}\PYG{o}{.}\PYG{n}{requires\PYGZus{}grad\PYGZus{}}\PYG{p}{(}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} y = w * x + b}
+\PYG{n}{weights} \PYG{o}{=} \PYG{n}{init\PYGZus{}weights}\PYG{p}{(}\PYG{p}{(}\PYG{l+m+mi}{28} \PYG{o}{*} \PYG{l+m+mi}{28}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{bias} \PYG{o}{=} \PYG{n}{init\PYGZus{}weights}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+\end{Verbatim}

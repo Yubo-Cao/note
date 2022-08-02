@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{def} \PYG{n+nf}{splitter}\PYG{p}{(}\PYG{n}{df}\PYG{p}{)}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{    返回两个 idxs list, 表示训练和结果集}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{n}{train} \PYG{o}{=} \PYG{n}{df}\PYG{o}{.}\PYG{n}{index}\PYG{p}{[}\PYG{o}{\PYGZti{}}\PYG{n}{df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{is\PYGZus{}valid}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{]}\PYG{o}{.}\PYG{n}{to\PYGZus{}list}\PYG{p}{(}\PYG{p}{)}
+    \PYG{n}{valid} \PYG{o}{=} \PYG{n}{df}\PYG{o}{.}\PYG{n}{index}\PYG{p}{[}\PYG{n}{df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{is\PYGZus{}valid}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{]}\PYG{o}{.}\PYG{n}{to\PYGZus{}list}\PYG{p}{(}\PYG{p}{)}
+    \PYG{k}{return} \PYG{n}{train}\PYG{p}{,} \PYG{n}{valid}
+
+\PYG{n}{dblock} \PYG{o}{=} \PYG{n}{DataBlock}\PYG{p}{(}\PYG{n}{blocks}\PYG{o}{=}\PYG{p}{(}\PYG{n}{ImageBlock}\PYG{p}{,} \PYG{n}{MultiCategoryBlock}\PYG{p}{)}\PYG{p}{,}
+                  \PYG{n}{splitter}\PYG{o}{=}\PYG{n}{splitter}\PYG{p}{,}
+                  \PYG{n}{get\PYGZus{}x}\PYG{o}{=}\PYG{n}{get\PYGZus{}x}\PYG{p}{,}
+                  \PYG{n}{get\PYGZus{}y}\PYG{o}{=}\PYG{n}{get\PYGZus{}y}\PYG{p}{,}
+                  \PYG{n}{item\PYGZus{}tfms}\PYG{o}{=}\PYG{n}{Resize}\PYG{p}{(}\PYG{l+m+mi}{400}\PYG{p}{)}\PYG{p}{,}
+                  \PYG{n}{batch\PYGZus{}tfms}\PYG{o}{=}\PYG{n}{aug\PYGZus{}transforms}\PYG{p}{(}\PYG{n}{size}\PYG{o}{=}\PYG{l+m+mi}{224}\PYG{p}{,} \PYG{n}{min\PYGZus{}scale}\PYG{o}{=}\PYG{l+m+mf}{0.75}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{dls} \PYG{o}{=} \PYG{n}{dblock}\PYG{o}{.}\PYG{n}{dataloaders}\PYG{p}{(}\PYG{n}{df}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+    \PYG{k}{def} \PYG{n+nf}{train\PYGZus{}epoch}\PYG{p}{(}\PYG{n}{model}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{for} \PYG{n}{xb}\PYG{p}{,} \PYG{n}{yb} \PYG{o+ow}{in} \PYG{n}{dl}\PYG{p}{:}
+        \PYG{n}{calc\PYGZus{}grad}\PYG{p}{(}\PYG{n}{xb}\PYG{p}{,} \PYG{n}{yb}\PYG{p}{,} \PYG{n}{model}\PYG{p}{)}
+        \PYG{n}{opt}\PYG{o}{.}\PYG{n}{step}\PYG{p}{(}\PYG{p}{)}
+        \PYG{n}{opt}\PYG{o}{.}\PYG{n}{zero\PYGZus{}grad}\PYG{p}{(}\PYG{p}{)}
+
+
+\PYG{k}{def} \PYG{n+nf}{train\PYGZus{}model}\PYG{p}{(}\PYG{n}{model}\PYG{p}{,} \PYG{n}{epochs}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{epochs}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n}{train\PYGZus{}epoch}\PYG{p}{(}\PYG{n}{model}\PYG{p}{)}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{validate\PYGZus{}epoch}\PYG{p}{(}\PYG{n}{model}\PYG{p}{)}\PYG{p}{,} \PYG{n}{end}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{ }\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+
+\PYG{n}{train\PYGZus{}model}\PYG{p}{(}\PYG{n}{linear\PYGZus{}model}\PYG{p}{,} \PYG{l+m+mi}{20}\PYG{p}{)}
+\end{Verbatim}

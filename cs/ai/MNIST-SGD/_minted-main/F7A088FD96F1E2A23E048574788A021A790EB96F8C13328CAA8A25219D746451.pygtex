@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{time} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{arange}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{20}\PYG{p}{)}\PYG{o}{.}\PYG{n}{float}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{speed} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{randn}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{)} \PYG{o}{*} \PYG{l+m+mi}{3} \PYG{o}{+} \PYG{l+m+mf}{0.75} \PYG{o}{*} \PYG{p}{(}\PYG{n}{time} \PYG{o}{\PYGZhy{}} \PYG{l+m+mf}{9.5}\PYG{p}{)} \PYG{o}{*}\PYG{o}{*} \PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}
+\end{Verbatim}

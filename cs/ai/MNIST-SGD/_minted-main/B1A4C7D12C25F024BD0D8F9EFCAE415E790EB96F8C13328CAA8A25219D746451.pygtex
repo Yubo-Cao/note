@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{path} \PYG{o}{=} \PYG{n}{untar\PYGZus{}data}\PYG{p}{(}\PYG{n}{URLs}\PYG{o}{.}\PYG{n}{MNIST\PYGZus{}SAMPLE}\PYG{p}{)}
+\PYG{n}{data} \PYG{o}{=} \PYG{p}{(}
+    \PYG{k}{lambda} \PYG{n+nb}{type}\PYG{p}{,} \PYG{n}{label}\PYG{p}{:} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{stack}\PYG{p}{(}
+        \PYG{p}{[}\PYG{n}{tensor}\PYG{p}{(}\PYG{n}{Image}\PYG{o}{.}\PYG{n}{open}\PYG{p}{(}\PYG{n}{img}\PYG{p}{)}\PYG{p}{)} \PYG{k}{for} \PYG{n}{img} \PYG{o+ow}{in} \PYG{p}{(}\PYG{n}{path} \PYG{o}{/} \PYG{n+nb}{type} \PYG{o}{/} \PYG{n}{label}\PYG{p}{)}\PYG{o}{.}\PYG{n}{ls}\PYG{p}{(}\PYG{p}{)}\PYG{p}{]}
+    \PYG{p}{)}
+    \PYG{o}{/} \PYG{l+m+mf}{255.0}
+\PYG{p}{)}
+\PYG{n}{xy} \PYG{o}{=} \PYG{p}{(}
+    \PYG{k}{lambda} \PYG{n+nb}{type}\PYG{p}{:} \PYG{p}{(}\PYG{n}{torch}\PYG{o}{.}\PYG{n}{cat}\PYG{p}{(}\PYG{n}{d} \PYG{o}{:=} \PYG{p}{[}\PYG{n}{data}\PYG{p}{(}\PYG{n+nb}{type}\PYG{p}{,} \PYG{n}{lbl}\PYG{p}{)} \PYG{k}{for} \PYG{n}{lbl} \PYG{o+ow}{in} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{37}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{)}\PYG{o}{.}\PYG{n}{view}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{28} \PYG{o}{*} \PYG{l+m+mi}{28}\PYG{p}{)}\PYG{p}{,}
+    \PYG{n}{tensor}\PYG{p}{(}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{*} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{d}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)} \PYG{o}{+} \PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{*} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{d}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{)}\PYG{p}{)}\PYG{o}{.}\PYG{n}{unsqueeze}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}
+\PYG{p}{)}
+\PYG{n}{train\PYGZus{}x}\PYG{p}{,} \PYG{n}{train\PYGZus{}y} \PYG{o}{=} \PYG{n}{xy}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{train}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{valid\PYGZus{}x}\PYG{p}{,} \PYG{n}{valid\PYGZus{}y} \PYG{o}{=} \PYG{n}{xy}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{valid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

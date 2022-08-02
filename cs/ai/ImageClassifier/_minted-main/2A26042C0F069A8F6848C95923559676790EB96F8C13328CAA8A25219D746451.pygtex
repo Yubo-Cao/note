@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{learn} \PYG{o}{=} \PYG{n}{vision\PYGZus{}learner}\PYG{p}{(}\PYG{n}{dls}\PYG{p}{,} \PYG{n}{resnet34}\PYG{p}{,} \PYG{n}{metrics}\PYG{o}{=}\PYG{n}{accuracy}\PYG{p}{)}
+\PYG{n}{learn}\PYG{o}{.}\PYG{n}{fine\PYGZus{}tune}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{)}
+\end{Verbatim}

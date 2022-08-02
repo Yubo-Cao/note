@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{def} \PYG{n+nf}{cal\PYGZus{}grad}\PYG{p}{(}\PYG{n}{loss}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{loss}\PYG{o}{.}\PYG{n}{backward}\PYG{p}{(}\PYG{p}{)}
+    \PYG{k}{return} \PYG{n}{params}\PYG{o}{.}\PYG{n}{grad}\PYG{o}{.}\PYG{n}{data}
+\end{Verbatim}

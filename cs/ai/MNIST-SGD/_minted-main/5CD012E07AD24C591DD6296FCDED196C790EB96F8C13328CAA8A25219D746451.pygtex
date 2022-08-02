@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{c+c1}{\PYGZsh{} y = w * x + b}
+\PYG{k}{def} \PYG{n+nf}{pred}\PYG{p}{(}\PYG{n}{xb}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{xb} \PYG{o}{@} \PYG{n}{weights} \PYG{o}{+} \PYG{n}{bias}
+\end{Verbatim}

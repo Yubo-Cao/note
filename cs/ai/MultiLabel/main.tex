@@ -1,0 +1,129 @@
+\documentclass{ctexart}
+\usepackage{newfloat}
+\usepackage{longtable, booktabs}
+\usepackage{graphicx}
+
+\usepackage{minted}
+\usemintedstyle{one-dark}
+\setmonofont{Fira Code}
+\newmintinline[mono]{python}{breakanywhere,fontsize=\small}
+\newminted{python}{breakanywhere,tabsize=2,autogobble,breaklines=true,escapeinside=||,fontsize=\small}
+\newenvironment{monos}{\VerbatimEnvironment\begin{pythoncode}}{\end{pythoncode}}
+
+\usepackage{tikz}
+\usetikzlibrary{external}
+\tikzexternalize
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+\section{Multi Label Classification}
+
+如果一个图像可能存在 0 个或更多个类别，这就是一个 multi-label classification 问题。
+
+\subsection{Data}
+
+PASCAL 数据集。
+
+\begin{monos}
+from fastai.vision.all import *
+path = untar_data(URLs.PASCAL_2007)
+df = pd.read_csv(path / 'train.csv')
+df.head()
+\end{monos}
+
+\begin{longtable}[]{@{}llll@{}}
+    \toprule()
+      & fname      & labels       & is\_valid \\
+    \midrule()
+    \endhead
+    0 & 000005.jpg & chair        & True      \\
+    1 & 000007.jpg & car          & True      \\
+    2 & 000009.jpg & horse person & True      \\
+    3 & 000012.jpg & car          & False     \\
+    4 & 000016.jpg & bicycle      & True      \\
+    \bottomrule()
+\end{longtable}
+
+\subsubsection{创建 DataBlock}
+
+\begin{monos}
+from operator import attrgetter 
+# 使用 attrgetter 而非 lambda 避免序列化问题
+dblock = DataBlock(get_x = attrgetter('fname'), get_y = attrgetter('labels'))
+dsets = dblock.datasets(df)
+dsets.train[0] 
+# ('005209.jpg', 'car')
+\end{monos}
+
+为了真正的打开图片，我们需要使用 BlockType。
+
+\begin{monos}
+def get_x(row):
+    return path / 'train' / row['fname']
+def get_y(row):
+    return row['labels'].split(' ')
+dblock = DataBlock(blocks = (ImageBlock, MultiCategoryBlock),
+                  get_x = get_x,
+                  get_y =  get_y)
+dsets = dblock.datasets(df)
+dsets.train[0]
+
+# (PILImage mode=RGB size=500x375,
+# TensorMultiCategory([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0.,
+#        0., 0.]))
+\end{monos}
+
+
+这里使用了一个 tensor 对象，每个元素 0 表示不是该类别，1 表示是该类别。这称为 one-hot
+encoding。这么做的原因在于：我们不能直接使用长度不一致一个类别列表，PyTorch 只能处理
+tensor，并且要求长度一致。
+
+从 one-hot encoding 返回类别：
+
+\begin{monos}
+idxs = torch.where(dsets.train[0][1] == 1.0)[0]
+dsets.train.vocab[idxs]
+\end{monos}
+
+最后，使用 \mono!is_valid! 来创建测试集和训练集。以及 \mono!Resize! 和
+\mono!aug_transforms! 来进行 data augmentations.
+
+\begin{monos}
+def splitter(df):
+    """
+    返回两个 idxs list, 表示训练和结果集
+    """
+    train = df.index[~df['is_valid']].to_list()
+    valid = df.index[df['is_valid']].to_list()
+    return train, valid
+
+dblock = DataBlock(blocks=(ImageBlock, MultiCategoryBlock),
+                  splitter=splitter,
+                  get_x=get_x,
+                  get_y=get_y,
+                  item_tfms=Resize(400),
+                  batch_tfms=aug_transforms(size=224, min_scale=0.75))
+dls = dblock.dataloaders(df)
+\end{monos}
+
+\subsection{Learner}
+
+\begin{monos}
+    learn = vision_learner(dls, resnet34)
+    x, y = dls.train.one_batch()
+    activs = learn.model(x)
+    activs.shape
+\end{monos}
+
+我们创建一个 vision\_learner, 然后将一个 mini-batch 输入模型，得到 (64, 20) 形状的输出。
+
+\begin{itemize}
+    \item 64 是 mini-batch 的大小
+    \item 20 是所有 category 的可能性
+\end{itemize}
+
+通过使用 sigmoid 函数，我们可以将其转换为概率。
+
+
+\end{document}

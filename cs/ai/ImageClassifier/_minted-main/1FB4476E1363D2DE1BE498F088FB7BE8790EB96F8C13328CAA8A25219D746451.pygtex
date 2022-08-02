@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k+kn}{from} \PYG{n+nn}{fastai}\PYG{n+nn}{.}\PYG{n+nn}{vision}\PYG{n+nn}{.}\PYG{n+nn}{all} \PYG{k+kn}{import} \PYG{o}{*}
+\PYG{n}{path} \PYG{o}{=} \PYG{n}{untar\PYGZus{}data}\PYG{p}{(}\PYG{n}{URLs}\PYG{o}{.}\PYG{n}{PETS}\PYG{p}{)}
+\PYG{n}{path}\PYG{o}{.}\PYG{n}{ls}\PYG{p}{(}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{}[Path(\PYGZsq{}/root/.fastai/data/oxford\PYGZhy{}iiit\PYGZhy{}pet/images\PYGZsq{}),Path(\PYGZsq{}/root/.fastai/data/oxford\PYGZhy{}iiit\PYGZhy{}pet/annotations\PYGZsq{})]}
+\end{Verbatim}

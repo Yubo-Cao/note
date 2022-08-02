@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+tksheet/__init__.py
+tksheet/_tksheet.py
+tksheet/_tksheet_column_headers.py
+tksheet/_tksheet_main_table.py
+tksheet/_tksheet_other_classes.py
+tksheet/_tksheet_row_index.py
+tksheet/_tksheet_top_left_rectangle.py
+tksheet/_tksheet_vars.py
+tksheet.egg-info/PKG-INFO
+tksheet.egg-info/SOURCES.txt
+tksheet.egg-info/dependency_links.txt
+tksheet.egg-info/top_level.txt

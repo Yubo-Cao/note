@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{fname} \PYG{o}{=} \PYG{p}{(}\PYG{n}{path} \PYG{o}{/} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{images}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{ls}\PYG{p}{(}\PYG{p}{)}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}
+\PYG{n+nb}{next}\PYG{p}{(}\PYG{n}{re}\PYG{o}{.}\PYG{n}{finditer}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{(?P\PYGZlt{}breed\PYGZus{}name\PYGZgt{}[A\PYGZhy{}Za\PYGZhy{}z\PYGZus{}]+)\PYGZus{}(?P\PYGZlt{}number\PYGZgt{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{d+)}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{.jpg\PYGZdl{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{fname}\PYG{o}{.}\PYG{n}{name}\PYG{p}{)}\PYG{p}{)}\PYG{o}{.}\PYG{n}{groupdict}\PYG{p}{(}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{}Deal with Latex Workshop\PYGZsq{}s Parser\PYGZdl{}}
+\PYG{c+c1}{\PYGZsh{} \PYGZob{}\PYGZsq{}breed\PYGZus{}name\PYGZsq{}: \PYGZsq{}Siamese\PYGZsq{}, \PYGZsq{}number\PYGZsq{}: \PYGZsq{}87\PYGZsq{}\PYGZcb{}}
+\end{Verbatim}

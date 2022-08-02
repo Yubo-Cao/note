@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{idxs} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{dsets}\PYG{o}{.}\PYG{n}{train}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mf}{1.0}\PYG{p}{)}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}
+\PYG{n}{dsets}\PYG{o}{.}\PYG{n}{train}\PYG{o}{.}\PYG{n}{vocab}\PYG{p}{[}\PYG{n}{idxs}\PYG{p}{]}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{w} \PYG{o}{\PYGZhy{}}\PYG{o}{=} \PYG{n}{w}\PYG{o}{.}\PYG{n}{grad} \PYG{o}{*} \PYG{n}{lr}
+\end{Verbatim}

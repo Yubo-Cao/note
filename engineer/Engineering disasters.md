@@ -1,0 +1,21 @@
+- Sampoong disaster
+	- Tried to adding floors
+	- Greedy etc.
+	- Air conditioner eventually make this collapse. The weight of those AC make it go over the max possible weight that it would hold and then it killed people.
+	- Effect
+		- All the buildings in Korea was tested, and only 2% of all the building were safe.
+		- Engineerings ethics.
+- Apollo 13 burst
+	- Liquid oxygen, and then, it burst
+	- In the weird pod for 4 days.
+- UCC, in Bhopal, India, pesticide
+	- MIC -> Nitrogen Cyanide
+	- UCC tries to not take care about that disaster
+	- Children has been born with a bunch of dseformities, after that disaster.
+- Dam
+	- Reservior
+- Colombia Space Shuttle disaster
+- Three mile island nuclear accident
+	- Shutdown
+	- Melting down
+	- 

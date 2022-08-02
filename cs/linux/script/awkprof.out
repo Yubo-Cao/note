@@ -1,0 +1,13 @@
+# grouping by "name" and sum values columns "qty" and "price"
+BEGIN {
+	FS = OFS = ","
+}
+
+NR == 1 {
+	print $0
+	next
+}
+
+NR > 0 {
+}
+

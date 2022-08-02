@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{dls}\PYG{o}{.}\PYG{n}{show\PYGZus{}batch}\PYG{p}{(}\PYG{n}{nrows}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{max\PYGZus{}n}\PYG{o}{=}\PYG{l+m+mi}{4}\PYG{p}{)}
+\end{Verbatim}

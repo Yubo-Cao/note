@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{for} \PYG{n}{\PYGZus{}} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{epoch}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{n}{show\PYGZus{}preds}\PYG{p}{(}\PYG{n}{f}\PYG{p}{(}\PYG{n}{time}\PYG{p}{,} \PYG{n}{params}\PYG{o}{.}\PYG{n}{data}\PYG{p}{)}\PYG{p}{)}
+\end{Verbatim}

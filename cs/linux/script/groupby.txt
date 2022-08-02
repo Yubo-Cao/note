@@ -1,0 +1,13 @@
+names,fruits,qty,price
+tom,banana,2,500
+tom,banana,3,750
+tom,apple,2,500
+alex,banana,3,750
+alex,melon,3,750
+alex,melon,3,750
+jess,banana,1,250
+jess,banana,1,250
+jess,banana,1,250
+danny,melon,2,500
+danny,apple,2,500
+danny,apple,2,500

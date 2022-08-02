@@ -1,0 +1,121 @@
+\documentclass[10pt]{ctexart}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mhchem}
+\usepackage{physics}
+\usepackage{stmaryrd}
+\usepackage{multicol}
+\usepackage{titlesec}
+
+\usepackage{geometry}
+\geometry{a4paper,scale=0.7}
+
+\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{\underline}[]
+\titlespacing{\section}{0pt}{2pt plus 2pt minus 2pt}{2pt plus 2pt minus 2pt}
+\titlespacing{\subsection}{0pt}{0pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
+\pagenumbering{gobble}
+
+\title{\vspace*{-3cm}Physics Equation Sheet}
+\author{佚名}
+\begin{document}
+\maketitle
+\begin{multicols}{2}
+    \section{Motion}
+
+    \begin{align*}
+        v                & = \frac{d_{\text{total}}}{t_{\text{total}}}                 \\
+        v_{\text {avg }} & = \frac{v_{i} + v_{f}}{2}                                   \\
+        a                & = \frac{\Delta v}{\Delta t}=\frac{v_{f}-v_{i}}{t_{f}-t_{i}} \\
+        d                & = \frac{a t^2}{2}                                           \\
+        d                & = v_{i} t+\frac{a t^{2}}{2}                                 \\
+        v_{f}            & = v_{i} + a t                                               \\
+        v_{f}^{2}        & = v_{i}^{2} + 2 a d                                         \\                                       \\
+        g     & = 9.8 \mathrm{~m} / \mathrm{s}^{2} \\
+    \end{align*}
+
+    \section{Force \& Friction}
+
+    \begin{align*}
+        F                & = m a         \\
+        F_{W}            & = m g         \\
+        F_{f}            & = \mu F_{N}   \\
+        F_{\text {sen }} & = F_{1}+F_{2} \\
+    \end{align*}
+
+    \section{Gravitational Force \& Torque}
+
+    \begin{align*}
+        F_{g}       & = \frac{G m_{1} m_{2}}{d^{2}}                                   \\
+        G           & = 6.67 \times 10^{-11} \frac{\mathrm{Nm}^{2}}{\mathrm{~kg}^{2}} \\
+        F_{1} d_{1} & = F_{2} d_{2}                                                   \\
+    \end{align*}
+
+    \section{Energy \& Momentum}
+
+    \begin{align*}
+        P E              & = m g h         \\
+        K E              & = 1 / 2 m v^{2} \\
+        p                & = m v           \\
+        \textrm{impulse} & = F \Delta t    \\
+        F \Delta t       & = m v           \\
+    \end{align*}
+
+
+    \newpage
+
+    \section{Electricity}
+
+    \begin{align*}
+        F & = \frac{k Q_{1} Q_{2}}{d^{2}}                              \\
+        k & = 9.0 \times 10^{9} \frac{\mathrm{Nm}^{2}}{\mathrm{C}^{2}} \\
+        V & = I R                                                      \\
+        P & = I V                                                      \\
+    \end{align*}
+
+    \subsection*{Series Circuit}
+
+    \begin{align*}
+        V_{T} & = V_{1}+V_{2}+V_{3}+\ldots \\
+        I_{T} & = I_{1}=I_{2}=I_{3} \ldots \\
+        R_{T} & = R_{1}+R_{2}+R_{3}+\ldots \\
+    \end{align*}
+
+    \subsection*{Parallel Circuit}
+
+    \begin{align*}
+        V_{T}           & = V_{1} = V_{2} = V_{3} = \ldots                             \\
+        I_{T}           & = I_{1} + I_{2} + I_{3} \ldots                               \\
+        \frac{1}{R_{T}} & = \frac{1}{R_{1}} + \frac{1}{R_{2}} + \frac{1}{R_{3}} \ldots \\
+    \end{align*}
+
+    \section{Work, Power, \& Machines}
+
+    \begin{align*}
+        W                 & = F d                                                    \\
+        P                 & = \frac{W}{t}                                            \\
+        \text{efficiency} & = \frac{W_{\text {out}}}{W_{\text {ub}}} \times 100 \% \\
+    \end{align*}
+
+
+    \section{Sound \& Waves}
+
+    \begin{align*}
+        v                 & = f \lambda                \\
+        f                 & = \frac{1}{T}              \\
+        T                 & = 2 \pi \sqrt{\frac{L}{g}} \\
+        v_{\text {sound}} & = 331.6  + \text {Temp}    \\
+    \end{align*}
+
+    \section{Optics}
+
+    \begin{align*}
+        \frac{1}{f}     & = \frac{1}{d_{i}}+\frac{1}{d_{o}} \\
+        c               & = 3 \times 10^{8} m               \\
+        \sin \theta_{e} & = \frac{n_{i}}{n_{r}}             \\
+        n               & = \frac{c}{v_{\text {material }}} \\
+    \end{align*}
+\end{multicols}
+\end{document}

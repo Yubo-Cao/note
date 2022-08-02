@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{def} \PYG{n+nf}{simple\PYGZus{}net}\PYG{p}{(}\PYG{n}{xb}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{res} \PYG{o}{=} \PYG{n}{xb} \PYG{o}{@} \PYG{n}{w1} \PYG{o}{+} \PYG{n}{b1}
+    \PYG{n}{res} \PYG{o}{=} \PYG{n}{res}\PYG{o}{.}\PYG{n}{max}\PYG{p}{(}\PYG{n}{tensor}\PYG{p}{(}\PYG{l+m+mf}{0.0}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n}{res} \PYG{o}{=} \PYG{n}{res} \PYG{o}{@} \PYG{n}{w2} \PYG{o}{+} \PYG{n}{b2}
+    \PYG{k}{return} \PYG{n}{res}
+\end{Verbatim}

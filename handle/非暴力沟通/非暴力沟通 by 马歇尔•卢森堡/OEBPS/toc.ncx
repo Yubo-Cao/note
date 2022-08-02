@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="zh">
+<head>
+<meta content="2016103809" name="dtb:uid"/>
+<meta content="1" name="dtb:depth"/>
+<meta content="mobiunpack.py" name="dtb:generator"/>
+<meta content="0" name="dtb:totalPageCount"/>
+<meta content="0" name="dtb:maxPageNumber"/>
+</head>
+<docTitle>
+<text>非暴力沟通</text>
+</docTitle>
+<navMap>
+    <navPoint id="np_1" playOrder="1">
+    <navLabel>
+    <text>前折页</text>
+    </navLabel>
+    <content src="Text/part0000.xhtml"/>
+    </navPoint>
+    <navPoint id="np_2" playOrder="2">
+    <navLabel>
+    <text>书名页</text>
+    </navLabel>
+    <content src="Text/part0001.xhtml"/>
+    </navPoint>
+    <navPoint id="np_3" playOrder="3">
+    <navLabel>
+    <text>目录</text>
+    </navLabel>
+    <content src="Text/part0002.xhtml"/>
+    </navPoint>
+    <navPoint id="np_4" playOrder="4">
+    <navLabel>
+    <text>译序</text>
+    </navLabel>
+    <content src="Text/part0003.xhtml"/>
+    </navPoint>
+    <navPoint id="np_5" playOrder="5">
+    <navLabel>
+    <text>前言</text>
+    </navLabel>
+    <content src="Text/part0004.xhtml"/>
+    </navPoint>
+    <navPoint id="np_6" playOrder="6">
+    <navLabel>
+    <text>语言是窗户（否则，它们是墙）</text>
+    </navLabel>
+    <content src="Text/part0005.xhtml"/>
+    </navPoint>
+    <navPoint id="np_7" playOrder="7">
+    <navLabel>
+    <text>第一章 让爱融入生活</text>
+    </navLabel>
+    <content src="Text/part0006.xhtml#a007"/>
+    </navPoint>
+    <navPoint id="np_8" playOrder="8">
+    <navLabel>
+    <text>第二章 是什么蒙蔽了爱？</text>
+    </navLabel>
+    <content src="Text/part0007.xhtml#a013"/>
+    </navPoint>
+    <navPoint id="np_9" playOrder="9">
+    <navLabel>
+    <text>第三章 区分观察和评论</text>
+    </navLabel>
+    <content src="Text/part0008.xhtml#a019"/>
+    </navPoint>
+    <navPoint id="np_10" playOrder="10">
+    <navLabel>
+    <text>第四章 体会和表达感受</text>
+    </navLabel>
+    <content src="Text/part0009.xhtml#a024"/>
+    </navPoint>
+    <navPoint id="np_11" playOrder="11">
+    <navLabel>
+    <text>第五章 感受的根源</text>
+    </navLabel>
+    <content src="Text/part0010.xhtml#a030"/>
+    </navPoint>
+    <navPoint id="np_12" playOrder="12">
+    <navLabel>
+    <text>第六章 请求帮助</text>
+    </navLabel>
+    <content src="Text/part0011.xhtml#a037"/>
+    </navPoint>
+    <navPoint id="np_13" playOrder="13">
+    <navLabel>
+    <text>第七章 用全身心倾听</text>
+    </navLabel>
+    <content src="Text/part0012.xhtml#a047"/>
+    </navPoint>
+    <navPoint id="np_14" playOrder="14">
+    <navLabel>
+    <text>第八章 倾听的力量</text>
+    </navLabel>
+    <content src="Text/part0013.xhtml#a054"/>
+    </navPoint>
+    <navPoint id="np_15" playOrder="15">
+    <navLabel>
+    <text>第九章 爱自己</text>
+    </navLabel>
+    <content src="Text/part0014.xhtml#a062"/>
+    </navPoint>
+    <navPoint id="np_16" playOrder="16">
+    <navLabel>
+    <text>第十章 充分表达愤怒</text>
+    </navLabel>
+    <content src="Text/part0015.xhtml#a073"/>
+    </navPoint>
+    <navPoint id="np_17" playOrder="17">
+    <navLabel>
+    <text>第十一章 运用强制力避免伤害</text>
+    </navLabel>
+    <content src="Text/part0016.xhtml#a081"/>
+    </navPoint>
+    <navPoint id="np_18" playOrder="18">
+    <navLabel>
+    <text>第十二章 重获生活的热情</text>
+    </navLabel>
+    <content src="Text/part0017.xhtml#a088"/>
+    </navPoint>
+    <navPoint id="np_19" playOrder="19">
+    <navLabel>
+    <text>第十三章 表达感激</text>
+    </navLabel>
+    <content src="Text/part0018.xhtml#a094"/>
+    </navPoint>
+    <navPoint id="np_20" playOrder="20">
+    <navLabel>
+    <text>后记</text>
+    </navLabel>
+    <content src="Text/part0019.xhtml"/>
+    </navPoint>
+    <navPoint id="np_21" playOrder="21">
+    <navLabel>
+    <text>附录：非暴力沟通模式</text>
+    </navLabel>
+    <content src="Text/part0020.xhtml"/>
+    </navPoint>
+    <navPoint id="np_22" playOrder="22">
+    <navLabel>
+    <text>编后记</text>
+    </navLabel>
+    <content src="Text/part0021.xhtml"/>
+    </navPoint>
+    <navPoint id="np_23" playOrder="23">
+    <navLabel>
+    <text>版权页</text>
+    </navLabel>
+    <content src="Text/part0022.xhtml"/>
+    </navPoint>
+    <navPoint id="np_24" playOrder="24">
+    <navLabel>
+    <text>后折页</text>
+    </navLabel>
+    <content src="Text/part0023.xhtml"/>
+    </navPoint>
+    <navPoint id="np_25" playOrder="25">
+    <navLabel>
+    <text>封底</text>
+    </navLabel>
+    <content src="Text/part0024.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

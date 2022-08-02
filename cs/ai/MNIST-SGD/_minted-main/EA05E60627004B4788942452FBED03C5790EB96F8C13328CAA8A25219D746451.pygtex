@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{linear\PYGZus{}model} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{28} \PYG{o}{*} \PYG{l+m+mi}{28}\PYG{p}{,}  \PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{weights}\PYG{p}{,} \PYG{n}{bias} \PYG{o}{=} \PYG{n}{linear\PYGZus{}model}\PYG{o}{.}\PYG{n}{parameters}\PYG{p}{(}\PYG{p}{)}
+\end{Verbatim}

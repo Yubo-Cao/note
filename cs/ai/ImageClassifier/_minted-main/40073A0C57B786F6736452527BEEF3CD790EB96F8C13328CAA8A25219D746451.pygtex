@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{learn} \PYG{o}{=} \PYG{n}{vision\PYGZus{}learner}\PYG{p}{(}\PYG{n}{dls}\PYG{p}{,} \PYG{n}{resnet34}\PYG{p}{,} \PYG{n}{metrics}\PYG{o}{=}\PYG{n}{accuracy}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Train randomly added layers for 3 epoches.}
+\PYG{c+c1}{\PYGZsh{} fit\PYGZus{}one\PYGZus{}cycle 从很小的 lr 开始，增加 lr, 最后再减少}
+\PYG{n}{learn}\PYG{o}{.}\PYG{n}{fit\PYGZus{}one\PYGZus{}cycle}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mf}{3e\PYGZhy{}3}\PYG{p}{)}
+\PYG{n}{learn}\PYG{o}{.}\PYG{n}{unfreeze}\PYG{p}{(}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} 因为层数增加了，所以需要再次寻找 learning rate}
+\PYG{c+c1}{\PYGZsh{} 因为模型已经被训练了，所以我们直接使用平坦区域的中间部分即可（不会出现 loss 减少，很正常）}
+\PYG{n}{learn}\PYG{o}{.}\PYG{n}{lr\PYGZus{}find}\PYG{p}{(}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} 返回一个建议，SuggestedLRs(valley=0.00010964782268274575)}
+\PYG{n}{learn}\PYG{o}{.}\PYG{n}{fit\PYGZus{}one\PYGZus{}cycle}\PYG{p}{(}\PYG{l+m+mi}{12}\PYG{p}{,} \PYG{n}{lr\PYGZus{}max}\PYG{o}{=}\PYG{n+nb}{slice}\PYG{p}{(}\PYG{l+m+mf}{1e\PYGZhy{}6}\PYG{p}{,} \PYG{l+m+mf}{1e\PYGZhy{}4}\PYG{p}{)}\PYG{p}{)}
+\end{Verbatim}

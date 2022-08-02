@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{interp} \PYG{o}{=} \PYG{n}{ClassificationInterpretation}\PYG{o}{.}\PYG{n}{from\PYGZus{}learner}\PYG{p}{(}\PYG{n}{learn}\PYG{p}{)}
+\PYG{n}{interp}\PYG{o}{.}\PYG{n}{plot\PYGZus{}confusion\PYGZus{}matrix}\PYG{p}{(}\PYG{p}{)}
+\end{Verbatim}

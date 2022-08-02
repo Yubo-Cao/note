@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{loss\PYGZus{}func} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{CrossEntropyLoss}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{loss} \PYG{o}{=} \PYG{n}{loss\PYGZus{}func}\PYG{p}{(}\PYG{n}{acts}\PYG{p}{,} \PYG{n}{target}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} OR}
+\PYG{n}{loss} \PYG{o}{=} \PYG{n}{F}\PYG{o}{.}\PYG{n}{cross\PYGZus{}entropy}\PYG{p}{(}\PYG{n}{acts}\PYG{p}{,} \PYG{n}{target}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{simple\PYGZus{}net} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Sequential}\PYG{p}{(}
+    \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{28} \PYG{o}{*} \PYG{l+m+mi}{28}\PYG{p}{,} \PYG{l+m+mi}{30}\PYG{p}{)}\PYG{p}{,}
+    \PYG{n}{nn}\PYG{o}{.}\PYG{n}{ReLU}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,}
+    \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{30}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{,}
+\PYG{p}{)}
+\PYG{n}{learn} \PYG{o}{=} \PYG{n}{Learner}\PYG{p}{(}
+    \PYG{n}{dls}\PYG{p}{,}
+    \PYG{n}{simple\PYGZus{}net}\PYG{p}{,}
+    \PYG{n}{opt\PYGZus{}func}\PYG{o}{=}\PYG{n}{SGD}\PYG{p}{,}
+    \PYG{n}{loss\PYGZus{}func}\PYG{o}{=}\PYG{n}{mnist\PYGZus{}loss}\PYG{p}{,}
+    \PYG{n}{metrics}\PYG{o}{=}\PYG{n}{accuracy}\PYG{p}{,}
+\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Because this is a deeper model, we will use a smaller learning rate.}
+\PYG{n}{learn}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{l+m+mi}{40}\PYG{p}{,} \PYG{n}{lr}\PYG{o}{=}\PYG{l+m+mf}{0.1}\PYG{p}{)}
+\end{Verbatim}

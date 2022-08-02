@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k+kn}{from} \PYG{n+nn}{fastai}\PYG{n+nn}{.}\PYG{n+nn}{callbacks}\PYG{n+nn}{.}\PYG{n+nn}{fp16} \PYG{k+kn}{import} \PYG{o}{*}
+\PYG{n}{learn} \PYG{o}{=} \PYG{n}{vision\PYGZus{}learner}\PYG{p}{(}\PYG{n}{dls}\PYG{p}{,} \PYG{n}{resnet34}\PYG{p}{,} \PYG{n}{metrics}\PYG{o}{=}\PYG{n}{accuracy}\PYG{p}{)}\PYG{o}{.}\PYG{n}{to\PYGZus{}fp16}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{learn}\PYG{o}{.}\PYG{n}{fit\PYGZus{}one\PYGZus{}cycle}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mf}{3e\PYGZhy{}3}\PYG{p}{)}
+\end{Verbatim}

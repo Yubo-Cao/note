@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{def} \PYG{n+nf}{calc\PYGZus{}grad}\PYG{p}{(}\PYG{n}{xb}\PYG{p}{,} \PYG{n}{yb}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{prds} \PYG{o}{=} \PYG{n}{pred}\PYG{p}{(}\PYG{n}{xb}\PYG{p}{)}
+    \PYG{n}{loss} \PYG{o}{=} \PYG{n}{mnist\PYGZus{}loss}\PYG{p}{(}\PYG{n}{prds}\PYG{p}{,} \PYG{n}{yb}\PYG{p}{)}
+    \PYG{n}{loss}\PYG{o}{.}\PYG{n}{backward}\PYG{p}{(}\PYG{p}{)}
+\end{Verbatim}

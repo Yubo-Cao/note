@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{pets} \PYG{o}{=} \PYG{n}{DataBlock}\PYG{p}{(}
+    \PYG{n}{blocks}\PYG{o}{=}\PYG{p}{(}\PYG{n}{ImageBlock}\PYG{p}{,} \PYG{n}{CategoryBlock}\PYG{p}{)}\PYG{p}{,}
+    \PYG{n}{get\PYGZus{}items}\PYG{o}{=}\PYG{n}{get\PYGZus{}image\PYGZus{}files}\PYG{p}{,}
+    \PYG{n}{splitter}\PYG{o}{=}\PYG{n}{RandomSplitter}\PYG{p}{(}\PYG{n}{seed}\PYG{o}{=}\PYG{l+m+mi}{42}\PYG{p}{)}\PYG{p}{,}
+    \PYG{n}{get\PYGZus{}y}\PYG{o}{=}\PYG{k}{lambda} \PYG{n}{path}\PYG{p}{:} \PYG{n}{re}\PYG{o}{.}\PYG{n}{search}\PYG{p}{(}
+        \PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{(?P\PYGZlt{}breed\PYGZus{}name\PYGZgt{}[A\PYGZhy{}Za\PYGZhy{}z0\PYGZhy{}9\PYGZus{}]+)\PYGZus{}(?P\PYGZlt{}number\PYGZgt{}}\PYG{l+s+s2}{\PYGZbs{}}\PYG{l+s+s2}{d+)}\PYG{l+s+s2}{\PYGZbs{}}\PYG{l+s+s2}{.jpg\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{path}\PYG{o}{.}\PYG{n}{name}
+    \PYG{p}{)}\PYG{o}{.}\PYG{n}{group}\PYG{p}{(}
+        \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{breed\PYGZus{}name}\PYG{l+s+s2}{\PYGZdq{}}
+    \PYG{p}{)}\PYG{p}{,}  \PYG{c+c1}{\PYGZsh{}\PYGZdl{} Apply labeling to path\PYGZsq{}s name. Equiv: using\PYGZus{}attr(RegexLabller(regex), \PYGZsq{}name\PYGZsq{}) since RegexLabeller use group 1 by default.shi hou}
+    \PYG{n}{item\PYGZus{}tfms}\PYG{o}{=}\PYG{n}{Resize}\PYG{p}{(}\PYG{l+m+mi}{460}\PYG{p}{)}\PYG{p}{,}
+    \PYG{n}{batch\PYGZus{}tfms}\PYG{o}{=}\PYG{n}{aug\PYGZus{}transforms}\PYG{p}{(}\PYG{n}{size}\PYG{o}{=}\PYG{l+m+mi}{224}\PYG{p}{,} \PYG{n}{min\PYGZus{}scale}\PYG{o}{=}\PYG{l+m+mf}{0.75}\PYG{p}{)}\PYG{p}{,}
+\PYG{p}{)}
+\PYG{n}{dls} \PYG{o}{=} \PYG{n}{pets}\PYG{o}{.}\PYG{n}{dataloaders}\PYG{p}{(}\PYG{n}{path} \PYG{o}{/} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{images}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

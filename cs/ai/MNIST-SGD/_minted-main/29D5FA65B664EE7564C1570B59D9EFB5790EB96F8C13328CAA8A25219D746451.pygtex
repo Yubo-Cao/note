@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{def} \PYG{n+nf}{calc\PYGZus{}grad}\PYG{p}{(}\PYG{n}{xb}\PYG{p}{,} \PYG{n}{yb}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{prds} \PYG{o}{=} \PYG{n}{pred}\PYG{p}{(}\PYG{n}{xb}\PYG{p}{)}
+    \PYG{n}{loss} \PYG{o}{=} \PYG{n}{mnist\PYGZus{}loss}\PYG{p}{(}\PYG{n}{prds}\PYG{p}{,} \PYG{n}{yb}\PYG{p}{)}
+    \PYG{n}{loss}\PYG{o}{.}\PYG{n}{backward}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{n}{params} \PYG{o}{=} \PYG{n}{weights}\PYG{p}{,} \PYG{n}{bias}
+\PYG{k}{for} \PYG{n}{epoch} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{train\PYGZus{}epoch}\PYG{p}{(}\PYG{n}{params}\PYG{p}{)}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{epoch}\PYG{l+s+si}{:}\PYG{l+s+s2}{\PYGZhy{}5}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ | }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{validate\PYGZus{}epoch}\PYG{p}{(}\PYG{p}{)}\PYG{l+s+si}{:}\PYG{l+s+s2}{.2f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

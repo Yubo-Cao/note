@@ -1,0 +1,153 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{circuitikz}
+
+\author{Yubo Cao}
+\title{Quick Summary for Circuit}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Ohm's Law}
+
+You should be able to derive all the subsequent equation from first one.
+
+\begin{equation}
+    \begin{split}
+        I & = \frac{V}{R} \\
+        V & = \frac{I}{R} \\
+        R & = VI
+    \end{split}
+    \label{eq:ohms}
+\end{equation}
+
+Where $I$ is the current, $V$ is the voltage, and $R$ is the resistance.
+
+\section{Circuit}
+
+You should be able to classify circuit as series, parallel, and combination. For
+combination circuit, take part of circuit that are parallel/series as a electrical
+device to simplify the problem.
+
+For parallel and series circuit, you should remember those relationships by heart, as
+they are not provided in formula sheet. By appling the relationships, you should be
+able to solve them.
+
+All the problem can be recurively resolved in this process. 
+
+\subsection{Series Circuit}
+
+
+\begin{figure}[htb]
+    \centering
+    \begin{circuitikz}
+        \draw
+        (0,0) to[switch] (3.236, 0)
+        to[battery1] (6.472,0)
+        to[R,l=$R_1$] (6.472,4) -- (0,4)
+        to[R,l=$R_2$] (0,0);
+    \end{circuitikz}
+    \caption{Series Circuit}
+    \label{fig:series}
+\end{figure}
+
+A series circuit in which there are only one way for electron to flow from positive to
+negative. In such circuit, one switch is sufficent to control all the electrical
+devices. However, it also means that this circuit would break immediately if any
+part of the circuit is broken.
+
+Assuming the electrical devices are labeled as \ref{fig:series} shows, $R_n$, $I_n$,
+and $V_n$ are the resistance, current, and voltage of device $n$. Then:
+
+\begin{equation}
+    \begin{split}
+        I_T &= I_1 = I_2 = \ldots = I_n \\
+        V_T &= \sum_{i = 1}^{n} V_i\\
+        R_T &= \sum_{i = 1}^{n} R_i
+    \end{split}
+    \label{eq:series}
+\end{equation}
+
+where $I_T$ is the total current, $V_T$ is the total voltage, and $R_T$ is the total
+resistance.
+
+\subsection{Parallel Circuit}
+\begin{figure}[htb]
+    \centering
+    \begin{circuitikz}
+        \draw
+        (0, 0) to[switch] (3.236, 0)
+        to[battery1] (6.472, 0) -- (6.472, 2)
+        to[R, l=$R_1$] (0, 2) -- (0, 2)
+        to (0, 0)
+        (6.472, 2) -- (6.472, 4)
+        to[R, l=$R_2$] (0, 4) -- (0, 4)
+        to (0, 2)
+        ;
+    \end{circuitikz}
+    \caption{Parallel Circuit}
+    \label{fig:parallel}
+\end{figure}
+
+A series circuit is a circuit in which there are multiple ways for electron to flow
+from positive to negative. In such circuit, the breakage of any part of the circuit
+does not affect the whole circuit (unless, you break the battery or some part that the
+entire circuit share).
+
+Use the exact same notation, the following relationship exists:
+
+\begin{equation}
+    \begin{split}
+        I_T &= I \sum_{i = 1}^{n} I_i \\
+        V_T &= V_1 = V_2 = \ldots = V_n\\
+        \frac{1}{R_T} &= \sum_{i = 1}^{n} \frac{1}{R_i}
+    \end{split}
+    \label{eq:parallel}
+\end{equation}
+
+Please remember that the reciprocal of total resistance is the sum of the reciprocal of
+individual resistance. If you get some number smaller than 1 in a question asking for
+resistance, check again to see if you made any silly mistake.
+
+Because of such relationship of resistance in parallel circuit, one thing always hold
+is: the resistance of parallel circuit always decrease when more electrical devices are
+added to the circuit.
+
+\section{Power \& Work}
+
+You should be able to derive rest of them by any one of them with \ref{eq:ohms}, which
+is the case during the exam: only $P=VI$ will be provided to you.
+
+\subsection{Power}
+
+\begin{equation}
+    \begin{split}
+        P &= VI \\
+        P &= I^2R\\
+        P &= \frac{V^2}{R}
+    \end{split}
+    \label{eq:power}
+\end{equation}
+
+where $P$ is the power, $I$ is the current, $V$ is the voltage, and $R$ is the resistance.
+
+\subsection{Work}
+
+\begin{equation}
+    \begin{split}
+        W &= VIt\\
+        W &= \frac{V^2t}{R} \\
+        W &= I^2Rt
+    \end{split}
+    \label{eq:work}
+\end{equation}
+
+where $W$ is the work, $V$ is the voltage, $I$ is the current, and $R$ is the resistance.
+
+
+\end{document}
