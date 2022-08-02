@@ -307,8 +307,70 @@
 - 罗马人将葡萄酒的鉴赏（connoisseurship）提升到了一个前所未有的高度
   - **social differentiation**
   - **mark wealth and status of drinker**
+
 - 富人
   - recognize and name the finest wines was an important form of conspicuous（炫耀） consumption
   - rich enough to afford the finest wines and had spent time learning which was which
   - **Falernian**
-- 穷人
+    - 可种植的位置少，并且发酵时间长。*Bacchus* 甚至传说来到这里种葡萄。
+    - **极端昂贵，富人专享**
+  - Caecuban, Surrentine, and Setine
+  - Sumputary Law
+    - 为了防止富人铺张浪费，在 161 BCE 以及之后，罗马颁发了大量的法案阻止食用过于昂贵的食物、饮料、或者穿丝绸衣服，使用金质餐具等等。
+
+- *convivium* $\approx$ 不平等的 *symposium*
+
+  - 在这里，人们并不通过一个共享的 *krater* 饮酒；而是给不同的客人不同类型的酒，显示出社会阶级的区别（*emphasize social divisions*）
+  - 罗马社会
+    - *patron* & *client*
+      - 一个树形结构；对于所有 *client* 是子节点，*patron* 是父节点。父节点向子节点提供好处（经济，法律援助，政治影响力），而子节点也需要工委父节点，履行特定的指责。
+    - fine wine was served to the host and his friends, second-rate wine to other guests, and third-rate wine to freedmen (former slaves).
+
+- 品类
+
+  - 不好的啤酒被加入各种添加剂，如沥青（*pitch*），盐，蜂蜜，草药等等。
+    - *Muslum* 葡萄酒加蜂蜜
+    - *Rosatum* 玫瑰花调味的类似饮料
+  - 比掺假的啤酒更话的是 *posca*
+    - 已经变酸的啤酒 + 水
+    - 常给罗马士兵，因为更好的啤酒无法保存并运输 —— 但是这事实上可以净化水
+  - *lora*
+    - 葡萄皮，葡萄籽，以及秸秆酿造的酒。形成苦味的酒，给奴隶。
+
+  - **there was a wine for every rung on the social ladder**
+
+## 酒入药
+
+- Galen
+  - 四体液生病理论 blood, phlegm, yellow bile, and black bile
+  - *Hippocrates*
+  - 直到19世纪之前，人们都将其思想奉为圭臬。
+- Galen给皇帝（Marcus Aurelius）找到了最好的葡萄酒，用于治疗疾病 —— Falernian。这主要适用于入药，*theriac*，所谓吃下之后即可百毒不侵的神药。
+- 这些葡萄酒是在皇帝的地窖，170 CE 时找到的。
+
+## Muslims 不喝酒？
+
+### Christian
+
+- Marcius Aurelius 在 180 CE 死去 —— 这也意味着一段较为安全，稳定，以及幸福的时期结束。
+- 之后的皇帝软弱无能，大多非正常死亡；395 BCE，Theodosius I 将罗马帝国分为东西两部分，每部分由他的一个儿子管理。不久，455 BCE，*Visigoths* (Germanic tribe) 建立了自己的部落，摧毁东罗马帝国；西罗马帝国不就四分五裂，此后再无罗马。
+- 虽然罗马文化的许多方面被扫除，但是随着新的统治者从罗马人手中接管，罗马、基督教和日耳曼传统之间也有文化融合 —— **葡萄酒保留了下来**，并且这些*野蛮人*对破坏葡萄园的人的惩罚大的难以置信。
+- ![image-20220802114353986](assets/image-20220802114353986.png)
+  - 基督教在第一个千年期间的兴起将葡萄酒提升到了一个**最具象征意义的位置**
+    - 基督在传教之初的第一个奇迹是在加利利海（*Sea of Galilee*）附近的一场婚礼上将六罐水变成了酒
+    - Dionysus 及其罗马化身 Bacchus 崇拜成员所建立的传统的延续
+
+### Muslium
+
+- The prophet Muhammad, was born around 570 CE, founded Muslium.
+- 因为在 Mecca，他的教义没人感兴趣；于是他就去了 Medina。在 632 BCE，他死了；但是他的信徒将伊斯兰教传播下去，成为阿拉伯的主导信仰。
+- **Muslims’ duties include frequent prayer, almsgiving, and abstention from alcoholic drinks.**
+- 禁酒原因
+  - 两个弟子在饮酒后打架，Muhammad 询问 Allah 之后，得到启示 —— 酒和赌博是 Satan 的陷阱，所以谁干这个事情，谁就是被魔鬼诱惑（+40 鞭）
+  - 从另个角度来说，穆斯林借此表明了他们对旧的文明观念的拒绝 ——我们不用喝表示复杂和智慧的葡萄酒，不和你们玩了！
+- 对酒的禁令在一些地方比在其他地方执行得更严格
+  - Muhammad 本人甚至都喝轻度发酵的枣酒
+  - 因此，有些地方这样解读禁令 —— 反对的不是酒本身，而是过度放纵的问题；被稀释的酒是可以的（“shall drink of a pure wine, tempered with the water of Tasnim, a spring at which the favored will refresh themselves”）
+- 停止散播以及欧洲文化复兴
+  - 732 BCE,central France, Battle of Tours。被 Charles Martel 打败，然后伊斯兰教进入欧洲的步伐就被阻止。随后，Martel's granson, Charles Charlemagne 并于 800 CE 加冕为 Holy Roman Emperor，标志欧洲文化的巩固的复兴的开始。
+  - ![image-20220802120030932](assets/image-20220802120030932.png)
